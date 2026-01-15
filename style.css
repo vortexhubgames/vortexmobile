@@ -1697,3 +1697,58 @@ h1 {
         font-size: 28px;
     }
 }
+
+/* МОБИЛЬНАЯ ОПТИМИЗАЦИЯ */
+@media (max-width: 768px) {
+    nav {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+    
+    .logo { font-size: 20px; }
+    
+    .nav-links {
+        gap: 10px;
+        font-size: 13px;
+    }
+    
+    .nav-buttons {
+        gap: 8px;
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+    .forum-btn, .play-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .game-title { font-size: 36px; }
+    h1 { font-size: 32px; }
+    
+    .hero-buttons,
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons button,
+    .cta-buttons button {
+        width: 100%;
+    }
+    
+    .stats-grid,
+    .features-preview-grid,
+    .features-grid,
+    .team-grid,
+    .gallery-grid,
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

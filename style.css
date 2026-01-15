@@ -1752,3 +1752,71 @@ h1 {
         text-align: center;
     }
 }
+
+/* Обновленные стили навигации */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 198, 255, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Эффект сияния для Форума */
+.glow-link {
+    color: #00c6ff !important;
+    text-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+.glow-link:hover {
+    text-shadow: 0 0 20px rgba(0, 198, 255, 0.8), 0 0 30px rgba(0, 198, 255, 0.4);
+}
+
+/* Сияющая кнопка Играть в меню */
+.play-nav-btn {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+    padding: 8px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 198, 255, 0.4);
+    animation: pulse-glow 2s infinite;
+}
+
+.play-nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 25px rgba(0, 198, 255, 0.7);
+    color: #fff;
+}
+
+/* Анимация пульсации для сияния */
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 10px rgba(0, 198, 255, 0.4); }
+    50% { box-shadow: 0 0 20px rgba(0, 198, 255, 0.7); }
+    100% { box-shadow: 0 0 10px rgba(0, 198, 255, 0.4); }
+}
+
+/* Убираем старые кнопки, если они мешают на мобилках */
+.nav-buttons {
+    display: none;
+}

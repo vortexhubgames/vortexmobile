@@ -1820,3 +1820,20 @@ nav {
 .nav-buttons {
     display: none;
 }
+
+/* Иконка (молния) */
+.logo-icon {
+    color: #ffd700; /* Был оранжевый #ff6b00 */
+    font-size: 28px;
+    animation: pulse-icon 2s infinite;
+}
+
+/* Текст BLIZZ */
+.logo-text {
+    color: #ffffff; /* Был оранжевый #ff6b00 */
+}
+
+/* Текст MOBILE */
+.logo-blue {
+    color: #ffd700; /* Был голубой #00a8ff */
+}
